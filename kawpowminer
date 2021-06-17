@@ -1,0 +1,8 @@
+```
+cd kawpowminer
+git submodule update --init --recursive
+mkdir build
+cd build
+cmake .. -DETHASHCUDA=ON -DETHASHCL=ON -DAPICORE=ON
+make -sj $(nproc)
+```
